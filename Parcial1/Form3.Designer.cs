@@ -31,7 +31,7 @@
             lblRecu = new Label();
             lblContra = new Label();
             lblInfoUser = new Label();
-            btnRegistro = new Button();
+            btnSalir = new Button();
             btnLogin = new Button();
             txtboxClave = new TextBox();
             txtboxNombre = new TextBox();
@@ -67,14 +67,15 @@
             lblInfoUser.TabIndex = 13;
             lblInfoUser.Text = "Ingrese su usuario";
             // 
-            // btnRegistro
+            // btnSalir
             // 
-            btnRegistro.Location = new Point(453, 344);
-            btnRegistro.Name = "btnRegistro";
-            btnRegistro.Size = new Size(158, 29);
-            btnRegistro.TabIndex = 12;
-            btnRegistro.Text = "Crear cuenta";
-            btnRegistro.UseVisualStyleBackColor = true;
+            btnSalir.Location = new Point(453, 344);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(158, 29);
+            btnSalir.TabIndex = 12;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
             // btnLogin
             // 
@@ -125,7 +126,7 @@
             Controls.Add(lblRecu);
             Controls.Add(lblContra);
             Controls.Add(lblInfoUser);
-            Controls.Add(btnRegistro);
+            Controls.Add(btnSalir);
             Controls.Add(btnLogin);
             Controls.Add(txtboxClave);
             Controls.Add(txtboxNombre);
@@ -141,7 +142,7 @@
         private Label lblRecu;
         private Label lblContra;
         private Label lblInfoUser;
-        private Button btnRegistro;
+        private Button btnSalir;
         private Button btnLogin;
         private TextBox txtboxClave;
         private TextBox txtboxNombre;

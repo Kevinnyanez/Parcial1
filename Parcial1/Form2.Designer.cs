@@ -36,6 +36,7 @@
             lblInfoUser = new Label();
             lblContra = new Label();
             lblRecu = new Label();
+            btnSalir = new Button();
             SuspendLayout();
             // 
             // lblLogin
@@ -118,11 +119,22 @@
             lblRecu.TabIndex = 7;
             lblRecu.Text = "¿Olvido su contraseña?";
             // 
+            // btnSalir
+            // 
+            btnSalir.Location = new Point(349, 397);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(94, 29);
+            btnSalir.TabIndex = 8;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
+            // 
             // FormCliente
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnSalir);
             Controls.Add(lblRecu);
             Controls.Add(lblContra);
             Controls.Add(lblInfoUser);
@@ -147,5 +159,6 @@
         private Label lblInfoUser;
         private Label lblContra;
         private Label lblRecu;
+        private Button btnSalir;
     }
 }
