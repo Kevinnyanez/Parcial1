@@ -16,6 +16,7 @@ namespace Parcial1
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
+            //Hola Kevin
             FormAdmin Form3 = new FormAdmin();
             Form3.Show();
             this.Hide();
